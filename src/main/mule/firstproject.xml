@@ -25,6 +25,7 @@ output application/json
 			</ee:message>
 		</ee:transform>
 		<http:request method="GET" doc:name="Request" doc:id="15509efc-1499-4e62-981a-8c7824cf5409" config-ref="HTTP_Request_configuration" path="/api/v1/employees"/>
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="3653d25f-6e8f-4cfb-99c2-231f36ef53e5" />
 		<logger level="INFO" doc:name="Logger" doc:id="0040f805-9e98-4651-a7b3-c24a19624908" message="firstProject is invoked" />
 	</flow>
 </mule>
